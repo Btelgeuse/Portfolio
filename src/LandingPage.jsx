@@ -1,32 +1,28 @@
 import React from 'react'
 import {
-  AbsoluteCenter,
   Center,
   Flex,
   Box,
   Text,
   Heading,
-  IconButton,
+  Button,
 } from '@chakra-ui/react'
-import { ArrowDownIcon } from '@chakra-ui/icons'
 
 function LandingPage() {
   return (
-    <>
-      <Box w='100vw' h='100vh'>
-        <AbsoluteCenter axis='both'>
+      <Box h='100vh' border='1px solid'>  
+        <Center w='100%' h='100%'>
           <Flex flexDirection='column'>
             <Text textAlign='center'>Hi ! I am</Text>
             <Heading as='h1' textAlign='center'>BETELGEUSE</Heading>
-            <Text textAlign='center'>I am a computer science and design student based in Paris.</Text>
-            <Center>
-              <IconButton borderRadius={40} w={5} m={12} icon={<ArrowDownIcon/>}></IconButton>
+            <Text textAlign='center'>and I am a student in...</Text>
+            <Center p={6}>
+              <Button m={2}>Design</Button>
+              <Button m={2}>Computer science</Button>
             </Center>
           </Flex>
-        </AbsoluteCenter>
+        </Center>
       </Box>
-      
-    </>
   )
 }
 

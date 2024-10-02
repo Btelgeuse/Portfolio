@@ -1,34 +1,43 @@
 import React from 'react'
 import {
   Flex,
+  Spacer,
   Button,
   Wrap,
   WrapItem,
   Link
 } from '@chakra-ui/react'
+import { DownloadIcon } from '@chakra-ui/icons'
 
 function Navbar() {
   return (
-    <>
-      <Flex border='1px solid'>
+      <Flex p={2} border='1px solid'>
         <Button>LOGO</Button>
-        <Wrap>
-          <WrapItem>
+
+        <Spacer />
+
+        <Wrap spacing={24}>
+          <WrapItem border='1px solid'>
             <Link>About</Link>
           </WrapItem>
+
           <WrapItem>
             <Link>Skills</Link>
           </WrapItem>
+
           <WrapItem>
             <Link>Projects</Link>
           </WrapItem>
+
           <WrapItem>
             <Link>Contact</Link>
           </WrapItem>
         </Wrap>
-        <Button>Resume</Button>
+
+        <Spacer />
+
+        <Button borderRadius={40} leftIcon={<DownloadIcon />}>Resume</Button>
       </Flex>
-    </>
   )
 }
 
