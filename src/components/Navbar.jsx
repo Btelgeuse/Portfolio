@@ -1,42 +1,50 @@
 import React from 'react'
 import {
   Flex,
-  Spacer,
-  Button,
   Wrap,
   WrapItem,
   Link
 } from '@chakra-ui/react'
-import { DownloadIcon } from '@chakra-ui/icons'
 
 function Navbar() {
+
   return (
-      <Flex p={2} border='1px solid'>
-        <Button>LOGO</Button>
+      <Flex
+        px={4}
+        py={2}
+        borderRadius={40}
+        bg="rgba(255, 255, 255, 0.1)"
+        position='fixed'
+        top='32px'
+        left='50%'
+        transform='translateX(-50%)'
+        border="1px solid rgba(255, 255, 255, 0.2)"
+        zIndex={1000}
+        >
 
-        <Spacer />
+        <Wrap spacing={10}>
 
-        <Wrap spacing={24}>
-          <WrapItem border='1px solid'>
-            <Link>About</Link>
+          <WrapItem>
+            <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>Home</Link>
           </WrapItem>
 
           <WrapItem>
-            <Link>Skills</Link>
+            <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>About</Link>
           </WrapItem>
 
           <WrapItem>
-            <Link>Projects</Link>
+            <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>Skills</Link>
           </WrapItem>
 
           <WrapItem>
-            <Link>Contact</Link>
+            <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>Projects</Link>
+          </WrapItem>
+
+          <WrapItem>
+            <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>Contact</Link>
           </WrapItem>
         </Wrap>
 
-        <Spacer />
-
-        <Button borderRadius={40} leftIcon={<DownloadIcon />}>Resume</Button>
       </Flex>
   )
 }
