@@ -20,9 +20,10 @@ function Navbar() {
         transform='translateX(-50%)'
         border="1px solid rgba(255, 255, 255, 0.2)"
         zIndex={1000}
+        display={['none', 'none', 'none', 'block']}
         >
 
-        <Wrap spacing={10}>
+        <Wrap spacing={{base:'0px', sm:'0px', md: '0px', lg: '16px'}}>
 
           <WrapItem>
             <Link px={4} py={1} borderRadius={40} bg="transparent" _hover={{bg: "rgba(255, 255, 255, 1)", transition: "background-color 0.3s ease", color: 'black'}}>Home</Link>
