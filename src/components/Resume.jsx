@@ -6,8 +6,8 @@ import {
 
 function Resume() {
   return (
-    <Flex my={{ base: '8px', sm: '8px', md: '8px', lg: '56px'}} h='50vh'>
-      <Flex mx='auto' width='90%' height={{ base: '50%', sm: '50%', md: '75%', lg: '100%'}} bg='transparent' border='1px solid white'>
+    <Flex h={{ base: '25vh', sm: '25vh', md: '25vh', lg: '50vh'}} my={{ base: '16px', sm: '16px', md: '16px', lg: '32px'}}>
+      <Flex mx='auto' width='90%' h='100%' bg='transparent' border='1px solid white'>
       </Flex>
     </Flex>
   )
