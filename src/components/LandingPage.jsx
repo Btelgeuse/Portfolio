@@ -67,10 +67,7 @@ function LandingPage() {
             </DrawerBody>
 
             <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
+              {/* Mettre les infos correspondantes */}
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
