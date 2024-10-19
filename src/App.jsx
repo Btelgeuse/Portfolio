@@ -17,7 +17,7 @@ function App() {
     <Box bgColor='#090909'>
       <Router>
       <Routes>
-        <Route path="/" exact element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         {/* <Route path="/about" element={<AboutMe />} /> */}
       </Routes>
     </Router>
