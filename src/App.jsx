@@ -18,11 +18,12 @@ function App() {
       <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/about" element={<AboutMe />} /> */}
+        <Route path="/about" element={<AboutMe />} />
       </Routes>
     </Router>
       <Navbar />
       <Resume />
+      <AboutMe />
     </Box>
   )
 }

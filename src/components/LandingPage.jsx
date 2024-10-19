@@ -8,7 +8,6 @@ import {
   HStack,
   useDisclosure,
   Link,
-  Button
 } from '@chakra-ui/react'
 
 import {
@@ -34,15 +33,18 @@ function LandingPage() {
       <Flex h='100vh' paddingTop={{ base: '8px', sm: '8px', md: '8px', lg: '128px'}}  flexDirection='column' >
 
         {/* Menu drawer + icon */}
-        <IconButton
-        icon={<HamburgerIcon />}
-        ref={btnRef}
-        onClick={onOpen}
-        bg='transparent'
-        justifyContent='end'
-        mx={4}
-        display={['flex', 'flex', 'flex', 'none']}
-        ></IconButton>
+        <Flex justifyContent='end'>
+          <IconButton
+          icon={<HamburgerIcon />}
+          ref={btnRef}
+          onClick={onOpen}
+          bg='transparent'
+          mx={4}
+          display={['flex', 'flex', 'flex', 'none']}
+          width='32px'
+          ></IconButton>          
+        </Flex>
+
 
         <Drawer
         isOpen={isOpen}
