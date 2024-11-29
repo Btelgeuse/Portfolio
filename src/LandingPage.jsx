@@ -25,7 +25,9 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react"
+
 import { IoMenu } from "react-icons/io5"
+import { LuDownload } from "react-icons/lu";
 
 function LandingPage() {
 
@@ -54,16 +56,22 @@ function LandingPage() {
               <Link href='#' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>MEDIAS</Link>
             </DrawerBody>
             <DrawerFooter display='inline'>
-              <Text fontWeight='400' fontSize='1.5em'>Contact</Text>
-              <Text fontWeight='300'>b.telgeusedev@gmail.com</Text>
+              <Box m='16px 0'>
+                <Text fontWeight='400' fontSize='1.5em'>Contact</Text>
+                <Text fontWeight='300'>b.telgeusedev@gmail.com</Text>
+              </Box>
+              <Box>
+                <Text fontWeight='400' fontSize='1.5em'>Resume</Text>
+                <Link fontWeight='300' color='#222'><LuDownload />Download Resume</Link>
+              </Box>
+              
             </DrawerFooter>
             <DrawerCloseTrigger _hover={{bg: "#d9d9d9", color: "black",}} />
           </DrawerContent>
         </DrawerRoot>
 
-        <Center w='100%' h='100%'>
-          <Heading boxShadow='sm' size='3xl' position='absolute' transform='translateX(-120%)' rotate='z 3deg' display='flex' color='#222' bgColor='white' p='8px 24px' letterSpacing={10}>BE<Text fontWeight='300'>TELGEUSE</Text></Heading>
-          <Image src="/Sticky_Carton.png" alt="Betelgeuse Background" h='100%' m='0 auto' />
+        <Center w='100%' h='100%' bgImage="url('/Sticky_Carton.png')" bgSize='contain' backgroundPosition='center'>
+          <Heading boxShadow='sm' size='3xl' position='relative' transform='translateX(-120%)' rotate='z 3deg' display='flex' color='#222' bgColor='white' p='8px 24px' letterSpacing={10}>BE<Text fontWeight='300'>TELGEUSE</Text></Heading>
         </Center>
       </Box>
     
