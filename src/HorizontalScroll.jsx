@@ -7,19 +7,16 @@ export function useHorizontalScroll() {
   useEffect(() => {
 
     const el = elRef.current;
-    console.log("Attached ref to:", el);
 
     if (el) {
       const onWheel = e => {
-        console.log("Scrolling", e.deltaY);
-
         if (e.deltaY == 0) {
           return
         };
 
         e.preventDefault();
         el.scrollTo({
-          left: el.scrollLeft + e.deltaY*4,
+          left: el.scrollLeft + e.deltaY,
           behavior: "smooth"
         });
       };

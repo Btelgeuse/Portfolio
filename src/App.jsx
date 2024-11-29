@@ -3,6 +3,8 @@ import React from 'react'
 import './App.css'
 import LandingPage from './LandingPage.jsx'
 import About from './About.jsx'
+import Resume from './Resume.jsx'
+
 import { useHorizontalScroll } from './HorizontalScroll'
 
 import {
@@ -23,6 +25,7 @@ function App() {
       whiteSpace='nowrap'
     >
       <LandingPage />
+      <Resume />
       <About />
     </Flex>
   )

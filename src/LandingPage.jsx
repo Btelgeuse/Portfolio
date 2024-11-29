@@ -70,7 +70,7 @@ function LandingPage() {
           </DrawerContent>
         </DrawerRoot>
 
-        <Center w='100%' h='100%' bgImage="url('/Sticky_Carton.png')" bgSize='contain' backgroundPosition='center'>
+        <Center w='100%' h='100%' bgImage="url('/Sticky_Carton.png')" bgSize='contain' backgroundPosition='center' backgroundRepeat='no-repeat'>
           <Heading boxShadow='sm' size='3xl' position='relative' transform='translateX(-120%)' rotate='z 3deg' display='flex' color='#222' bgColor='white' p='8px 24px' letterSpacing={10}>BE<Text fontWeight='300'>TELGEUSE</Text></Heading>
         </Center>
       </Box>
