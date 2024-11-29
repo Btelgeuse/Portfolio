@@ -6,24 +6,25 @@ import About from './About.jsx'
 import { useHorizontalScroll } from './HorizontalScroll'
 
 import {
-  Box
+  Flex,
 } from '@chakra-ui/react'
 
 function App() {
   const scrollRef = useHorizontalScroll();
 
   return (
-    <Box
+    <Flex
       h="100vh"
-      w='200vw'
-      display="flex"
-      flexDirection="row"
+      w='100vw'
+      flexDirection='row'
       ref={scrollRef}
-      overflow='auto'
+      overflowX="auto"
+      overflowY='hidden'
+      whiteSpace='nowrap'
     >
       <LandingPage />
       <About />
-    </Box>
+    </Flex>
   )
 }
 

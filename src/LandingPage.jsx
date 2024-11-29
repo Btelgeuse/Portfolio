@@ -32,8 +32,8 @@ function LandingPage() {
   const [open, setOpen] = useState(false)
 
   return (
-      <Box w="100vw" h="100vh" bgColor="pink" display="flex" >
-        {/* <DrawerRoot open={open} onOpenChange={(e) => setOpen(e.open)} placement='start' >
+      <Box w="100vw" h="100vh" bgColor="pink" display="flex" flexShrink="0">
+        <DrawerRoot open={open} onOpenChange={(e) => setOpen(e.open)} placement='start' >
           <DrawerBackdrop />
           <Center h='100%' bgColor='white' p={4} position='fixed' zIndex='999' boxShadow='sm'>
             <DrawerTrigger asChild>
@@ -48,7 +48,7 @@ function LandingPage() {
               <DrawerTitle letterSpacing={8} fontWeight='400' fontSize='2em'>MENU</DrawerTitle>
             </DrawerHeader>
             <DrawerBody display='flex' flexDirection='column'  letterSpacing={8} fontWeight='300' fontSize='2em'>
-              <Link href='#' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>ABOUT</Link>
+              <Link href='#aboutPage' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>ABOUT</Link>
               <Link href='#' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>SKILLS</Link>
               <Link href='#' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>PROJECTS</Link>
               <Link href='#' m='16px 0' color='#222' _hover={{fontWeight: '500', textDecoration: 'none'}} _focus={{outline: 'none'}}>MEDIAS</Link>
@@ -57,14 +57,14 @@ function LandingPage() {
               <Text fontWeight='400' fontSize='1.5em'>Contact</Text>
               <Text fontWeight='300'>b.telgeusedev@gmail.com</Text>
             </DrawerFooter>
-            <DrawerCloseTrigger />
+            <DrawerCloseTrigger _hover={{bg: "#d9d9d9", color: "black",}} />
           </DrawerContent>
         </DrawerRoot>
 
         <Center w='100%' h='100%'>
           <Heading boxShadow='sm' size='3xl' position='absolute' transform='translateX(-120%)' rotate='z 3deg' display='flex' color='#222' bgColor='white' p='8px 24px' letterSpacing={10}>BE<Text fontWeight='300'>TELGEUSE</Text></Heading>
           <Image src="/Sticky_Carton.png" alt="Betelgeuse Background" h='100%' m='0 auto' />
-        </Center> */}
+        </Center>
       </Box>
     
   )
