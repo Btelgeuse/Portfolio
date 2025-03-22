@@ -12,3 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.nav-links {
+  color: #fff;
+  font-size: .9em;
+}
