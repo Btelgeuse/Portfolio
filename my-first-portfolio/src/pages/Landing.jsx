@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react'
 
 function Landing() {
   return (
-    <Box w="100vw" h="100vh">
+    <Box w="100vw">
         <Hero/>
     </Box>
   )

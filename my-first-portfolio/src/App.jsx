@@ -1,5 +1,6 @@
 import Landing from './pages/Landing'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 import { Box } from '@chakra-ui/react'
 
@@ -10,6 +11,7 @@ function App() {
     <Box w="100vw" h="100vh">
       <Navbar/>
       <Landing/>
+      <Footer/>
 
       <div class="blob-outer-container">
         <div class="blob-inner-container">
