@@ -7,7 +7,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <Center h={14} bgColor="red">
+    <Center w="100vw" h={14} bgColor="red" position="absolute">
         <Flex gap={12}>
             <Link href='#' className='nav-links'>ABOUT</Link>
             <Link href='#' className='nav-links'>SKILLS</Link>

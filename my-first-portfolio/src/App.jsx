@@ -1,4 +1,5 @@
-import Navbar from './components/Navbar'
+import Landing from './pages/Landing'
+import Navbar from '@/components/Navbar'
 
 import { Box } from '@chakra-ui/react'
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <Box w="100vw" h="100vh">
       <Navbar/>
+      <Landing/>
     </Box>
   )
 }
