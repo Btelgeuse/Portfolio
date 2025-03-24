@@ -22,7 +22,7 @@
   z-index: -1;
   inset: 0;
   margin: auto;
-  filter: blur(80px);
+  filter: blur(120px);
 }
 .blob-inner-container {
   position: absolute;
@@ -89,9 +89,6 @@
   letter-spacing: 2px;
   font-weight: 300;
   color: #fff;
-}
-.hero-btn:hover {
-  color: #10031A;
 }
 
 .contact-links {

@@ -13,7 +13,7 @@ function Navbar() {
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
-            p: "4px 10px",
+            p: "6px 14px",
             transition: ".3s ease"
             }}>ABOUT</Link>
 
@@ -21,7 +21,7 @@ function Navbar() {
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
-            p: "4px 10px",
+            p: "6px 14px",
             transition: ".3s ease"
             }}>SKILLS</Link>
 
@@ -29,7 +29,7 @@ function Navbar() {
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
-            p: "4px 10px",
+            p: "6px 14px",
             transition: ".3s ease"
             }}>PROJECTS</Link>
             
@@ -37,7 +37,7 @@ function Navbar() {
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
-            p: "4px 10px",
+            p: "6px 14px",
             transition: ".3s ease"
             }}>LABS</Link>
         </Flex>        

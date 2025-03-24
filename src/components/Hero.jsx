@@ -19,7 +19,7 @@ function Hero() {
                 <Text className='regular-text'>A computer science and design student fascinated by Nature.</Text>
             </Flex>
             
-            <Button className='hero-btn' size="sm" variant="outline" animation="bounce">START <GoArrowRight/></Button>
+            <Button className='hero-btn' size="sm" variant="outline" animation="bounce" _hover={{bgColor: "#fff", color: "#10031A"}}>START <GoArrowRight/></Button>
         </Flex>
         
     </AbsoluteCenter>
