@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 import { Box } from '@chakra-ui/react'
 
-import './App.css'
+import ''
 
 function App() {
   return (
