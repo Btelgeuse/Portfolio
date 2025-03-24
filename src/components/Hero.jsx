@@ -12,7 +12,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <AbsoluteCenter>
+    <AbsoluteCenter w="48vw">
         <Flex direction="column" gap={16}>
             <Flex direction="column" gap={2}>
                 <Heading as="h1" className='hero-title' letterSpacing={2}>Joanne Andriamahandry</Heading>

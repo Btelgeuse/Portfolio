@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 import { Box } from '@chakra-ui/react'
 
-import ''
+import './App.css'
 
 function App() {
   return (
@@ -13,11 +13,11 @@ function App() {
       <Landing/>
       <Footer/>
 
-      <div class="blob-outer-container">
-        <div class="blob-inner-container">
-          <div class="blob blob-purple"></div>
-          <div class="blob blob-red"></div>
-          <div class="blob blob-yellow"></div>
+      <div className="blob-outer-container">
+        <div className="blob-inner-container">
+          <div className="blob blob-purple"></div>
+          <div className="blob blob-red"></div>
+          <div className="blob blob-yellow"></div>
         </div>
       </div>
     </Box>

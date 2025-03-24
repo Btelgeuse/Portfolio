@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
-        "skipLibCheck": true,
-        "paths": {
-            "@/*": ["./src/*"]
-        }
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "skipLibCheck": true,
+      "paths": {
+        "@/*": ["./src/*"]
+      }
     }
-}
+  }
