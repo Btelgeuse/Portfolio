@@ -22,7 +22,7 @@
   z-index: -1;
   inset: 0;
   margin: auto;
-  filter: blur(100px);
+  filter: blur(80px);
 }
 .blob-inner-container {
   position: absolute;
@@ -43,7 +43,7 @@
   animation: spinBlob 14s linear infinite;
 }
 .blob-purple {
-  background-color: #290942;
+  background-color: #440a71;
   top: 30vh;
   left: -30vw;
 }
@@ -70,9 +70,6 @@
   color: #fff;
   font-size: .9em;
   font-weight: 500;
-}
-.nav-links:hover {
-  
 }
 
 .hero-title {
