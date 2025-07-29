@@ -1,15 +1,16 @@
 import { 
     Center,
     Flex,
-    Link,
+    Link
  } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom';
 import React from 'react'
 
 function Navbar() {
   return (
     <Center w="100vw" h={16} position="absolute">
         <Flex gap={12}>
-            <Link href='#' className='nav-links' _hover={{
+            <Link as={RouterLink} to="/about" className='nav-links' _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -17,7 +18,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>ABOUT</Link>
 
-            <Link href='#' className='nav-links' _hover={{
+            <Link as={RouterLink} to="/skills" className='nav-links' _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -25,7 +26,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>SKILLS</Link>
 
-            <Link href='#' className='nav-links' _hover={{
+            <Link as={RouterLink} to="/projects" className='nav-links' _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -33,7 +34,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>PROJECTS</Link>
             
-            <Link href='#' className='nav-links' _hover={{
+            <Link as={RouterLink} to="/labs" className='nav-links' _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",

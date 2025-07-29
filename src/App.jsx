@@ -1,6 +1,13 @@
-import Landing from './pages/Landing'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+
+import Landing from './pages/Landing'
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Labs from './pages/Labs';
 
 import { Box } from '@chakra-ui/react'
 
@@ -8,19 +15,29 @@ import './App.css'
 
 function App() {
   return (
-    <Box w="100vw" h="100vh">
-      <Navbar/>
-      <Landing/>
-      <Footer/>
+    <BrowserRouter>
+      <Box w="100vw" h="100vh">
+        <Navbar />
 
-      <div className="blob-outer-container">
-        <div className="blob-inner-container">
-          <div className="blob blob-purple"></div>
-          <div className="blob blob-red"></div>
-          <div className="blob blob-yellow"></div>
+        <Routes>
+          <Route path="/Portfolio/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/labs" element={<Labs />} />
+        </Routes>
+
+        <Footer />
+
+        <div className="blob-outer-container">
+          <div className="blob-inner-container">
+            <div className="blob blob-purple"></div>
+            <div className="blob blob-red"></div>
+            <div className="blob blob-yellow"></div>
+          </div>
         </div>
-      </div>
-    </Box>
+      </Box>
+    </BrowserRouter>
   )
 }
 
