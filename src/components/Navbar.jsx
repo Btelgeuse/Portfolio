@@ -6,9 +6,18 @@ import {
 import { Link as RouterLink } from 'react-router-dom';
 import React from 'react'
 
+// const breakpoints = {
+//   base: "0rem", // 0px
+//   sm: "30rem", // ~480px
+//   md: "48rem", // ~768px
+//   lg: "62rem", // ~992px
+//   xl: "80rem", // ~1280px
+//   "2xl": "96rem", // ~1536px
+// }
+
 function Navbar() {
   return (
-    <Center w="100vw" h={16} position="absolute">
+    <Center w="100vw" h={16} position="absolute" hideBelow="md">
         <Flex gap={12}>
             <Link as={RouterLink} to="/about" className='nav-links' _hover={{
             textDecoration: "none",
