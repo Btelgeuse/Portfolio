@@ -17,9 +17,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <Center w="100vw" h={16} position="absolute" hideBelow="md">
+    <Center w="100vw" h={16} position="absolute" marginTop={12} hideBelow="md">
         <Flex gap={12}>
-            <Link as={RouterLink} to="/about" className='nav-links' _hover={{
+            <Link as={RouterLink} to="/about" className='nav-links' fontSize="1rem" _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -27,7 +27,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>ABOUT</Link>
 
-            <Link as={RouterLink} to="/skills" className='nav-links' _hover={{
+            <Link as={RouterLink} to="/skills" className='nav-links' fontSize="1rem" _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -35,7 +35,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>SKILLS</Link>
 
-            <Link as={RouterLink} to="/projects" className='nav-links' _hover={{
+            <Link as={RouterLink} to="/projects" className='nav-links' fontSize="1rem" _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
@@ -43,7 +43,7 @@ function Navbar() {
             transition: ".3s ease"
             }}>PROJECTS</Link>
             
-            <Link as={RouterLink} to="/labs" className='nav-links' _hover={{
+            <Link as={RouterLink} to="/labs" className='nav-links' fontSize="1rem" _hover={{
             textDecoration: "none",
             bgColor: "rgba(139, 88, 179, .3)",
             borderRadius: "50px",
