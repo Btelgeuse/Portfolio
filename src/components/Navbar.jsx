@@ -17,7 +17,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <Center w="100vw" h={16} position="absolute" marginTop={12} hideBelow="md">
+    <Center w="100vw" h={16} position="absolute" marginTop={8} hideBelow="md">
         <Flex gap={12}>
             <Link as={RouterLink} to="/about" className='nav-links' fontSize="1rem" _hover={{
             textDecoration: "none",

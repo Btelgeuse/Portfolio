@@ -1,10 +1,12 @@
 import React from 'react'
-import { AbsoluteCenter } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 
 function About() {
   return (
-    <AbsoluteCenter>
-    </AbsoluteCenter>
+    <Flex justify="center" align="center">
+      <Flex direction="column" gap={16} w="clamp(20rem, 80vw, 60rem)">
+      </Flex>
+    </Flex>
   )
 }
 
