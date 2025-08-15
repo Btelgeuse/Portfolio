@@ -17,25 +17,12 @@ function App() {
   return (
     <BrowserRouter>
       <Box w="100vw" h="100vh">
-        <Navbar />
+        <Landing />
 
         <Routes>
-          <Route path="/Portfolio/" element={<Landing />} />
-          <Route path="/Portfolio/about" element={<About />} />
-          <Route path="/Portfolio/skills" element={<Skills />} />
-          <Route path="/Portfolio/projects" element={<Projects />} />
-          <Route path="/Portfolio/labs" element={<Labs />} />
+          <Route path="/" element={<Landing />} />
         </Routes>
 
-        <Footer />
-
-        <div className="blob-outer-container">
-          <div className="blob-inner-container">
-            <div className="blob blob-purple"></div>
-            <div className="blob blob-red"></div>
-            <div className="blob blob-yellow"></div>
-          </div>
-        </div>
       </Box>
     </BrowserRouter>
   )
