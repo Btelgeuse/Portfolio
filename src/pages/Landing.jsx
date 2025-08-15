@@ -2,7 +2,6 @@ import {
   Flex,
   Container,
   Image,
-  AbsoluteCenter,
   Heading,
   Button,} from '@chakra-ui/react'
 import React from 'react'
@@ -16,10 +15,10 @@ function Landing() {
       
       <Flex className='overlay'></Flex>
 
-      <AbsoluteCenter>
+      <Flex className='title-container'>
         <Heading className='title'>Joanne Andriamahandry</Heading>
         <Button className='btn'>Enter</Button>
-      </AbsoluteCenter>
+      </Flex>
     </Flex>
   )
 }
