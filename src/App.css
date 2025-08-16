@@ -105,7 +105,7 @@ img {
 
 @media (max-width: 700px) {
   #btn {
-    padding: 8px 12px;
+    padding: 8px 10px;
     font-size: 0.9rem;
   }
 }
