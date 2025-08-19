@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   max-width: 1280px;
@@ -15,7 +15,7 @@
 
 body {
   overflow: hidden;
-  font-family: "Jersey 10", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 
 /* Landing page */
@@ -37,7 +37,7 @@ body {
   position: fixed;
   inset: 0;
 
-  backdrop-filter: blur(6px); /* Flou sur tout le fond */
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px); /* Safari */
 
   mask-image: radial-gradient(
@@ -66,10 +66,21 @@ body {
 }
 
 .title {
+  font-family: 'Archivo', sans-serif;
+  text-transform: uppercase;
   text-align: center;
   color: #fff;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Lora', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
   margin-bottom: 40px;
 }
 

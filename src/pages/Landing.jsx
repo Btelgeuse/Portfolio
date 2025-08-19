@@ -3,7 +3,10 @@ import {
   Container,
   Image,
   Heading,
-  Button,} from '@chakra-ui/react'
+  Button,
+  Text,
+  Link,
+  Box,} from '@chakra-ui/react'
 import {React, useEffect} from 'react'
 
 function Landing() {
@@ -36,7 +39,10 @@ function Landing() {
 
       <Flex className='title-container'>
         <Heading className='title'>Joanne Andriamahandry</Heading>
-        <Button id='btn'>Enter</Button>
+        <Text className='description'>computer science and design.</Text>
+        <Link>
+          <Box id='btn'>enter</Box>
+        </Link>
       </Flex>
     </Flex>
   )
