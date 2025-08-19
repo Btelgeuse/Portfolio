@@ -7,6 +7,17 @@ import {
 import React from 'react'
 
 function Landing() {
+
+  const overlay = document.querySelector('.overlay');
+  const button = document.getElementById('btn');
+
+  document.addEventListener('mousemove', (e) => {
+    if (!overlay.classList.contains('fade-out')) {
+      overlay.style.setProperty('--x', `${e.clientX}px`);
+      overlay.style.setProperty('--y', `${e.clientY}px`);
+    }
+  });
+
   return (
     <Flex>
       <Container className='bg-container'>
@@ -17,7 +28,7 @@ function Landing() {
 
       <Flex className='title-container'>
         <Heading className='title'>Joanne Andriamahandry</Heading>
-        <Button className='btn'>Enter</Button>
+        <Button id='btn'>Enter</Button>
       </Flex>
     </Flex>
   )
