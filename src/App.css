@@ -36,14 +36,17 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(34, 34, 34, 1);
+
+  backdrop-filter: blur(6px); /* Flou sur tout le fond */
+  -webkit-backdrop-filter: blur(6px); /* Safari */
+
   mask-image: radial-gradient(
-    circle 150px at var(--x) var(--y),
+    circle 300px at var(--x) var(--y),
     transparent 60%,
     rgba(34, 34, 34, 1) 80%
   );
   -webkit-mask-image: radial-gradient(
-    circle 150px at var(--x) var(--y),
+    circle 300px at var(--x) var(--y),
     transparent 60%,
     rgba(34, 34, 34, 1) 80%
   );

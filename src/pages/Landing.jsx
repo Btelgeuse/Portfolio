@@ -8,7 +8,6 @@ import {React, useEffect} from 'react'
 
 function Landing() {
 
-  // const overlay = document.querySelector('.overlay');
   // const button = document.getElementById('btn');
 
   useEffect(() => {
