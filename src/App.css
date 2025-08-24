@@ -37,9 +37,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* Safari */
+  background: rgba(2, 5, 39, 0.8);
 
   mask-image: radial-gradient(
     circle 300px at var(--x) var(--y),

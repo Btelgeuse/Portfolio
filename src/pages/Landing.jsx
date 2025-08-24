@@ -7,7 +7,6 @@ import {
   Text,
   Link,
   Box,} from '@chakra-ui/react'
-import { Link as RouterLink } from 'react-router-dom';
 import {React, useEffect} from 'react'
 
 function Landing() {
@@ -41,7 +40,7 @@ function Landing() {
       <Flex className='title-container'>
         <Heading className='title'>Joanne Andriamahandry</Heading>
         <Text className='description'>computer science and design.</Text>
-        <Link as={RouterLink} to="/about">
+        <Link>
           <Box id='btn'>enter</Box>
         </Link>
       </Flex>
